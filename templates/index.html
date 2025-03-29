@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Deepshield</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/style_f.css" />
+    <link
+    rel="Tab icon"
+    href="/static/img/logo_rbg.png"
+    type="image/png"
+  />
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+    rel="stylesheet"
+  />
+  <script src="/static/js/main.js"></script>
+  <script src="/static/js/chat.js"></script>
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/css/animate-css/animate.css">
+  <link rel="stylesheet" href="/static/css/custom-css/footer.css">
+  <link rel="stylesheet" href="/static/css/custom-css/main.css">
+  <link rel="stylesheet" href="/static/css/custom-css/header.css">
+  <link rel="stylesheet" href="/static/css/custom-css/index.css">
+  <link rel="shortcut icon" href="/static/img/logo_rbg.png" type="image/x-icon">
+  <style>
+  body {
+    background-image: 'static/img/roller.jpg' /* Replace with your desired color code */
+  }
+  .navbar {
+      position: fixed;
+      top: 0px;
+      width: 100%;
+      height: 80px;
+      background-color: #707070;
+      color: white;
+      text-align: center;
+    }
+
+    .content {
+      margin-top: 50px;
+      /* padding: 20px; */
+    }
+  .navbar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 80px;
+  background-color: #707070;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-item {
+  padding: 10px 20px;
+  position: relative;
+  color: white;
+  /* text-decoration: none; */
+  font-weight: bolder;
+  font-size: larger;
+  text-decoration-line: none;
+}
+
+.nav-item:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  height: 5px;
+  background-color: pink;
+  text-decoration-line: none;
+}
+.logo {
+  height: 60px; /* Set the height of the logo as needed */
+  margin-left: 10px; /* Adjust the margin as needed */
+}
+
+.navbar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 80px;
+  background-color: #707070;
+  /* opacity: 50%; */
+  color: rgba(57, 7, 71, 0.886);
+  display: flex;
+  justify-content: space-between; /* Adjusted to separate logo and menu */
+  align-items: center;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  padding: 20px 80px;
+  position: relative;
+  color: white;
+  text-decoration-line: none;
+}
+
+.nav-item:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  height: 5px;
+  background-color: pink;
+  text-decoration-line: none;
+}
+
+.navbar {
+      /* Existing styles... */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      height: 60px;
+      margin-left: 10px;
+    }
+
+    .nav-item {
+      padding: 10px 20px;
+      position: relative;
+      color: white;
+      text-decoration-line: none;
+    }
+
+    .nav-item:hover::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 10px;
+      border: 50px solid rgb(60, 4, 78); 
+      pointer-events: none; 
+      border-radius: 5px; 
+      text-decoration-line: none;
+    }
+
+.nav-item {
+  padding: 10px 20px;
+  position: relative;
+  color: white;
+  text-decoration-line: none;
+  transition: color 0.3s; 
+}
+
+.nav-item:hover {
+  color: white; 
+  text-decoration-line: none;
+}
+
+.nav-item:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 10px;
+  border: 22px solid rgb(60, 4, 78);
+  pointer-events: none;
+  border-radius: 5px;
+  text-decoration-line: none;
+}
+
+.nav-item {
+  position: relative;
+  color: white;
+  text-decoration-line: none;
+  transition: color 0.3s; /* Added transition for smoother color change */
+}
+
+.nav-item:hover {
+  color: white; /* Change text color on hover */
+  text-decoration-line: none;
+}
+
+.nav-item:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px; /* Adjusted to create a 20px height box */
+  height: 0px; /* Set the height of the box */
+  background-color: rgb(60, 4, 78);
+  pointer-events: none;
+  border-radius: 5px; /* Optional: Add rounded corners */
+  z-index: -1;
+  text-decoration-line: none;
+}
+.navbar {
+  position: fixed;
+  /* top: 10px; */
+  width: 100%;
+  height: 80px;
+  background-color: #707070;
+  color: white;
+  display: flex;
+  justify-content: space-between; /* Add space between logo and menu */
+  align-items: center;
+}
+
+.nav-item {
+  padding: 10px 20px; /* Adjusted padding for the navbar items */
+  position: relative;
+  color: white;
+  text-decoration-line: none;
+  transition: color 0.3s;
+}
+
+.nav-item:hover {
+  color: white;
+  text-decoration-line: none;
+
+}
+
+/* .nav-item:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: 20px solid rgb(60, 4, 78);
+  pointer-events: none;
+  border-radius: 5px;
+  text-decoration-line: none;
+
+} */
+
+.logo {
+  height: 60px;
+  margin-left: 10px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right {
+  margin-right: 40px; /* Add margin to create some space on the right side */
+}
+.nav-item.active {
+  /* Add your hover properties for the active link here */
+  background-color: rgb(60, 4, 78); /* Example: Change background color on hover */
+  border-radius: 5px;
+  color: white; /* Example: Change text color on hover */
+  /* Add any other properties you want */
+}
+.hoverbtn:hover{
+  color: rgb(209, 181, 232);
+}
+/* .container{
+  margin-top: 100px;
+} */
+
+  /* </style> */
+</style>
+</head>
+
+
+<body>
+  
+  <div class="navbar">
+    <div class="navbar-left">
+      <img src="/static/img/logo_rbg.png" alt="Logo" class="logo">
+    </div>
+    <div class="navbar-right">
+      <a href="index.html" class="nav-item active">HOME</a>
+      
+      <a href="about.html" class="nav-item">ABOUT US</a>
+      <a href="deepfake.html" class="nav-item">DETECT</a>
+      <a href="blogs.html" class="nav-item">BLOGS</a>
+      <!-- <a href="mood_tracker.html" class="nav-item">MOOD TRACKER</a>
+      <a href="cycle_tracker.html" class="nav-item">PERIOD TRACKER</a>
+      <a href="contact_doctor.html" class="nav-item">CONTACT THE DOCTOR</a>
+      <a href="blogs.html" class="nav-item">BLOGS</a> -->
+    </div>
+  </div>  
+  <div class="content">
+  <section class="register d-flex align-items-center position-relative">
+    <div class="register-overlay position-absolute"></div>
+    <div class="container-fluid ">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center wow fadeIn">
+            <h1 class="text-uppercase register__heading--1 mb-3">Deepshield</h2>
+              <class="text-uppercase register__heading--2 mb-3"><h1 class="text-uppercase landing-page__heading--1">detect <span class="text__color">expose</span><br>
+                prevent <span class="text__color">protect</span><br>
+                <a href="about.html" class="btn btn-register text-center text-uppercase wow bounce hoverbtn">Learn more</a>
+              <!-- <a href="login.html" class="btn btn-register text-center text-uppercase wow bounce">Sign in / Register</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    </div>
+  </section>
+<!-- 
+  <footer class="footer">
+
+    <div class="container-fluid custom-wrapper"> 
+      <div class="row mt-5 mx-1 justify-content-between">
+        <div class="col-md-4 col-lg-1 pl-md-0 pr-sm-0">
+          <div class="pt-0 mb-4 d-none d-md-block">
+            <h4 class="pt-1 pb-1 mb-0 d-none d-md-block"><b><p></b></h4><h3> </h3></p>
+          </div>
+          <div class="py-3 d-block d-sm-block d-md-none text-center"> -->
+            <!-- <img src="/static/img/l" alt="Fitfam logo icon"> -->
+          <!-- </div>
+          <p class="py-2 d-none d-md-block footer-p font-weight-bold">
+            Join our immersive world of <br>
+            gamified fitness, where you can <br>level up your health while having fun.
+          </p>
+        </div>
+        <div class="col-12 text-center text-lg-left col-md-2 col-lg-2 pt-3 py-md-0 my-border d-md-none d-lg-block">
+          <h5 class="pt-3 pb-1 mb-0 d-none d-md-block">Explore</h5>
+          <ul class="pl-0 py-3">
+            <li class="py-1 d-block d-sm-block d-md-none font-weight-bold"><a href="index.html">Home</a></li>
+            <li class="py-1 d-block d-sm-block d-md-none font-weight-bold"><a href="about.html">About</a></li>
+            <li class="py-1 d-block d-sm-block d-md-none font-weight-bold"><a href="games.html">Games</a></li>
+            <li class="py-1 d-block d-sm-block d-md-none font-weight-bold"><a href="Calorie-Counter.html">Calorie Counter</a></li>
+            <li class="py-1 d-block d-sm-block d-md-none font-weight-bold"><a href="blog.html">Health Blogs</a></li>
+            <li class="py-1 d-block d-sm-block d-md-none font-weight-bold"><a href="video.html">Health Videos</a></li>
+            <li class="py-1 d-block d-sm-block d-md-none font-weight-bold"><a href="meet_the_team.html">The team</a></li>
+
+            <li class="py-1 d-block d-sm-block font-weight-bold"><a href="index.html">Home</a></li>
+            <li class="py-1 d-block d-sm-block font-weight-bold"><a href="about.html">About</a></li>
+            <li class="py-1 d-block d-sm-block font-weight-bold"><a href="games.html">Games</a></li>
+            <li class="py-1 d-block d-sm-block font-weight-bold"><a href="Calorie-Counter.html">Calorie Counter</a></li>
+            <li class="py-1 d-block d-sm-block font-weight-bold"><a href="blog.html">Health Blogs</a></li>
+            <li class="py-1 d-block d-sm-block font-weight-bold"><a href="video.html">Health Videos</a></li>
+            <li class="py-1 d-block d-sm-block font-weight-bold"><a href="meet_the_team.html">The team</a></li>
+          </ul>
+        </div>
+  
+
+          <span class="float-md-left mt-3 mt-xl-5 text-center">&copy; 2020 FitFam Gym. All rights
+            reserved</span>
+        </div>
+      </div>
+    </div>
+    </div> -->
+  <!-- </footer>  -->
+
+
+  <script src="/static/js/jquery.js"></script>
+  <script src="/static/js/bootstrap.min.js"></script>
+  <script src="/static/js/popper.min.js"></script>
+  <script src="/static/js/popper.js"></script>
+
+  <script src="/static/js/wow.min.js"></script>
+
+  <script>
+    new WOW().init();
+  </script>
+<!-- Popup chat window -->
+
+    <!-- chat open -->
+    <div class="chat-bar-open" id="chat-open">
+      <button
+        id="chat-open-button"
+        type="button"
+        class="collapsible close"
+        onclick="chatOpen()"
+      >
+        <img src="/static/img/logo_rbg.png" alt="Deepshield" />
+      </button>
+    </div>
+
+    <!-- chat close -->
+    <div class="chat-bar-close" id="chat-close">
+      <button
+        id="chat-close-button"
+        type="button"
+        class="collapsible close"
+        onclick="chatClose()"
+      >
+        <i class="material-icons-outlined"> close </i>
+      </button>
+    </div>
+
+    <!-- chat-window 1 -->
+    <div class="chat-window" id="chat-window1">
+      <div class="hi-there">
+        <p class="p1">Hi There!</p>
+        <br />
+        <p class="p2">Hello Ask Us Anythig, Share Your<br />Feedback.</p>
+      </div>
+      <div class="start-conversation">
+        <h1 style="color: rgb(0,0,0);">Start a Conversation</h1>
+        <p style="color: rgb(0,0,0);">The Deepshield team typically replies in few minutes.</p>
+        
+
+        <button
+          class="new-conversation"
+          type="button"
+          onclick="openConversation()"
+        >
+          <span>New Conversation</span
+          ><i class="material-icons-outlined"> send </i>
+        </button>
+      </div>
+    </div>
+
+    <!-- chat chat-window 2 -->
+    <div class="chat-window2" id="chat-window2">
+      <div class="message-box" id="messageBox">
+        <div class="hi-there">
+          <p class="p1">Hi There!</p>
+          
+          <p class="p2">The team typically replies in few minutes.</p>
+        </div>
+      </div>
+      <div class="input-box">
+        <div class="surveysparrow">
+          <img src="" />
+          <p></p>
+        </div>
+        <div class="write-reply">
+          <input
+            class="inputText"
+            type="text"
+            id="textInput"
+            placeholder="Write a reply..."
+          />
+        </div>
+        <div class="send-button">
+          <button
+            type="submit"
+            class="send-message"
+            id="send"
+            onclick="userResponse()"
+          >
+            <i class="material-icons-outlined"> send </i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+</body>
+
+</html>
