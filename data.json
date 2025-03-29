@@ -1,0 +1,195 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi there",
+                "How are you",
+                "Is anyone there?",
+                "Hey",
+                "Hola",
+                "Hello",
+                "Good day"
+            ],
+            "responses": [
+                "Hello, welcome to DeepShield! How can I assist you?",
+                "Hi there! Ready to analyze an image?",
+                "Greetings! Need help detecting deepfakes?"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "Nice chatting to you, bye",
+                "Till next time"
+            ],
+            "responses": [
+                "See you! Stay vigilant against deepfakes.",
+                "Have a great day! Come back if you need more analysis.",
+                "Bye! DeepShield is always here to help."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Awesome, thanks",
+                "Thanks for helping me"
+            ],
+            "responses": [
+                "Happy to help! Need to analyze another image?",
+                "Anytime! Let me know if you need more insights.",
+                "You're welcome! Stay safe from deepfakes."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "noanswer",
+            "patterns": [],
+            "responses": [
+                "Sorry, I didn't get that. Could you rephrase?",
+                "Please provide more details so I can assist you.",
+                "Not sure I understand. Need help with deepfake detection?"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "options",
+            "patterns": [
+                "What can DeepShield do?",
+                "How can you help me?",
+                "What features does this website offer?",
+                "What services are available?"
+            ],
+            "responses": [
+                "DeepShield helps you detect deepfakes by analyzing images for authenticity and identifying artifacts.",
+                "Our platform provides deepfake classification with confidence scores and artifact detection for fake images.",
+                "DeepShield offers deepfake detection, artifact analysis, blogs, and educational content on deepfakes."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "how_to_use",
+            "patterns": [
+                "How do I use this website?",
+                "How to check if an image is fake?",
+                "How does DeepShield work?",
+                "How can I analyze an image?"
+            ],
+            "responses": [
+                "Using DeepShield is simple! Go to the 'Detect' menu, upload an image, and click 'Analyze' to check if it's real or fake.",
+                "To analyze an image, navigate to the 'Detect' section, upload your image, and let DeepShield process it for deepfake detection.",
+                "DeepShield works by using AI to classify an image as real or fake and can also highlight manipulated areas if detected.",
+                "To check an image, go to 'Detect', upload it, and wait for the results. If it's fake, DeepShield will show you the artifacts."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "help_with_detection",
+            "patterns": [
+                "Yes",
+                "Sure",
+                "I need help",
+                "How do I detect deepfakes?"
+            ],
+            "responses": [
+                "Great! You can start by going to the 'Detect' menu, uploading an image, and clicking 'Analyze'.",
+                "To detect deepfakes, upload an image in the 'Detect' section, and our AI will analyze it for authenticity.",
+                "DeepShield can analyze an image and highlight artifacts if it's fake. Just upload an image in the 'Detect' menu and see the results!"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "deepfake_basics",
+            "patterns": [
+                "What is a deepfake?",
+                "How are deepfakes created?",
+                "Explain deepfake technology",
+                "Are deepfakes dangerous?"
+            ],
+            "responses": [
+                "A deepfake is a digitally manipulated image or video created using AI, often replacing one person's face with another's.",
+                "Deepfakes are created using machine learning models like GANs (Generative Adversarial Networks) that synthesize realistic images and videos.",
+                "While deepfake technology can be used for creative purposes, it is also misused to spread misinformation and fraud.",
+                "Deepfakes are dangerous because they can be used to create false narratives, impersonate people, and spread fake news."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "deepfake_uses",
+            "patterns": [
+                "Are deepfakes useful?",
+                "Can deepfakes be used positively?",
+                "What are deepfake applications?"
+            ],
+            "responses": [
+                "Deepfake technology is used in entertainment, gaming, and film production to create realistic visual effects.",
+                "Positive applications include voice synthesis for people with speech impairments, historical recreations, and AI-assisted filmmaking.",
+                "Deepfakes can help improve AI research, data augmentation, and creative content generation when used responsibly."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "deepfake_misuse",
+            "patterns": [
+                "How are deepfakes misused?",
+                "Can deepfakes be harmful?",
+                "What are the risks of deepfakes?"
+            ],
+            "responses": [
+                "Deepfakes are often misused for creating fake news, scams, and even impersonating public figures.",
+                "They can be used for identity fraud, defamation, and spreading disinformation online.",
+                "One of the biggest threats is the use of deepfakes in politics to manipulate public opinion."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "artifact_detection",
+            "patterns": [
+                "What are deepfake artifacts?",
+                "How does artifact detection work?",
+                "Can you highlight fake areas in the image?",
+                "How do I detect manipulated parts of an image?",
+                "Why do deepfake images look weird sometimes?",
+                "What are common signs of a deepfake?"
+            ],
+            "responses": [
+                "Deepfake artifacts are inconsistencies in manipulated images, such as unnatural textures or distortions. Our tool can highlight these.",
+                "Artifact detection works by analyzing visual inconsistencies in fake images and marking suspicious regions.",
+                "If an image is detected as fake, you can use our artifact detection feature to identify manipulated parts visually.",
+                "Deepfake images often have blurry edges, mismatched lighting, or unnatural facial expressions. Our artifact detection helps identify these flaws.",
+                "Common deepfake signs include flickering in videos, mismatched lip movements, and unusual textures in images. Use DeepShield to spot them!"
+            ],
+            "context": [
+                ""
+            ]
+        }
+    ]
+}
